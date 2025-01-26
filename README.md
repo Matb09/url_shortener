@@ -41,7 +41,7 @@ url_shortener/
 
 * Python 3.9+ installed locally (if running outside of Docker).
 * MongoDB accessible (if not using Docker, ensure it’s running on localhost or your preferred host).
-* Docker & Docker Compose installed (if running in containers).
+* Docker installed (if running in containers).
 
 ### How to use
 * Clone, run and exec into the container
