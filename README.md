@@ -46,7 +46,7 @@ url_shortener/
 ### How to use
 * Clone, run and exec into the container
 ```bash
-git clone https://github.com/your-username/url_shortener.git
+git clone https://github.com/Matb09/url_shortener.git
 cd url_shortener
 docker-compose up -d --build
 docker exec -it url-shortener bash
