@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  mongo:
+    image: mongo:latest
+    container_name: 'mongo'
+    ports:
+      - "27017:27017"
+
+  url_shortener:
+    build: .
+    container_name: 'url-shortener'
+    depends_on:
+      - mongo
+    environment:
+      MONGO_URI: "mongodb://mongo:27017/url_shortener_db"
+    # Keep the container up by running a never-ending command
+    command: tail -f /dev/null
